@@ -4,6 +4,15 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type UserID struct {
+	UserID string
+}
+
+type UserDetail struct {
+	Username string
+	Follower int
+}
+
 func main() {
 	router := gin.Default()
 	router.GET("/follower/:USERNAME", func(c *gin.Context) {
