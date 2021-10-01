@@ -1,3 +1,6 @@
+lint:
+	@go fmt ./...
+
 build:
 	@go build
 
